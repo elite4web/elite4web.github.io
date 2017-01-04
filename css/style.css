@@ -90,3 +90,13 @@ a{
   left: 0;
   right: 0;
 }
+
+.banner{height: 500px;position: relative;}
+.banner li{width:100%;float: left;display: none;}
+.banner li:first-child{display: block;}
+.banner li img{
+	width:100%;
+}
+.prev,.next{cursor:pointer;display: inline-block;color:#fae596;font-weight: 400;font-size: 18px;position: absolute;top:50%;z-index: 999;}
+.prev{left:5%;}
+.next{right:5%;}
