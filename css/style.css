@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Slab|Jura|Spinnaker');
+/*font-family: 'Jura', sans-serif;
+font-family: 'Spinnaker', sans-serif;
+font-family: 'Josefin Slab', serif;
+*/
+
 /*color codes #dddfd4 #fae596 #3fb0ac #173e43*/
 
 /*sets the padding and margin all tag to 0*/
@@ -9,6 +15,8 @@
 body{
 	background-color: #eee; /*set background color for body to pink*/
 	color: #fff; /*set font color to white*/
+	font-family: 'Spinnaker', sans-serif;
+	color: #000;
 }
 
 a{
@@ -16,6 +24,13 @@ a{
 	text-decoration: none;
 }
 
+nav{
+	width: 100%;
+	float: left;
+	position: absolute;
+	z-index: 2;
+	background-color: rgba(85, 88, 93, 0.1);
+}
 .logo{
 	float: left;
 	margin-left:50px;
@@ -23,8 +38,7 @@ a{
 }
 
 .menu{
-	background-color: #55585d;
-	height: 90px;
+	/*background-color: #55585d;*/
 	padding-right: 50px;
 }
 .menu li{
@@ -38,10 +52,10 @@ a{
 	padding: 15px 20px;
 	color: #fff;
 	font-size: 18px;
-}
-
-.menu li a:hover,.menu li a.active{
-	background-color:#4d5256;
+	font-weight: bold;
+	letter-spacing: 1.2px;
+	text-transform: uppercase;
+	font-family: 'Josefin Slab', serif;
 }
 
 .menu li a.active{
@@ -91,12 +105,14 @@ a{
   right: 0;
 }
 
-.banner{height: 500px;position: relative;}
+.banner{max-height: 500px;height:500px;position: relative;}
 .banner li{width:100%;float: left;display: none;}
 .banner li:first-child{display: block;}
 .banner li img{
 	width:100%;
 }
-.prev,.next{cursor:pointer;display: inline-block;color:#fae596;font-weight: 400;font-size: 18px;position: absolute;top:50%;z-index: 999;}
-.prev{left:5%;}
-.next{right:5%;}
+.prev,.next{cursor:pointer;display: inline-block;color:#fae596;font-weight: 400;font-size: 24px;position: absolute;top:50%;z-index: 999;border-radius: 50%; background-color: rgba(0,0,0,.5);}
+.prev i,.next i{display: block;margin: 0 auto;}
+.prev:hover,.next:hover{background-color: #000;color: #fff;}
+.prev{left:5%;padding: 15px 18px 15px 15px;}
+.next{right:5%;padding: 15px 15px 15px 18px;}
